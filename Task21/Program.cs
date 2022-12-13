@@ -3,7 +3,7 @@
 
 int [] AddArray(int[] array)
 {
-    for(int count = 0; count < array.Lenght; count++)
+    for(int count = 0; count < array.Length; count++)
     {
         Console.Write($"Введите {count + 1} ось координаты ");
         int ver = int.Parse(Console.ReadLine());
@@ -17,7 +17,8 @@ void FromFistToSecond(int[] arr1, int[] arr2)
     Console.WriteLine(size); 
 }
 
-int [] FistPoint = new int [3];
-FistPoint = AddArray(FistPoint);
-int [] SecondPoint = AddArray(SecondPoint);
-FromFistToSecond(FistPoint, SecondPoint);
+int[] FirstPoint = new int [3];
+FirstPoint = AddArray(FirstPoint);
+int[] SecondPoint = new int [3];
+SecondPoint = AddArray(SecondPoint);
+FromFistToSecond(FirstPoint, SecondPoint);
